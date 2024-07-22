@@ -1,0 +1,88 @@
+/* Basic body styling with a cool light background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #a7e5ee; /* Soft light blue */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Main calculator container styling */
+.calculator {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 320px;
+    height: 450px; /* Increased height for better layout */
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Rounded corners for a smooth look */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    background: #ffffff; /* White background for clean look */
+    overflow: hidden;
+}
+
+/* Display screen styling */
+.display {
+    background-color: #006064; /* Deep teal color */
+    color: #ffffff; /* White text for contrast */
+    text-align: right;
+    padding: 30px 20px; /* Spacious padding for aesthetics */
+    font-size: 2.5em; /* Larger font size for readability */
+}
+
+/* Button container grid layout */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns grid */
+    gap: 1px; /* Small gap between buttons */
+}
+
+/* General button styling */
+.btn {
+    background-color: #e0f2f1; /* Light teal for buttons */
+    border: none;
+    font-size: 1.5em; /* Large font size for buttons */
+    padding: 20px; /* Padding for better touch targets */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Operator buttons styling */
+.btn.operator {
+    background-color: #00838f; /* Darker teal for operators */
+    color: #ffffff; /* White text */
+}
+
+/* Clear button styling */
+.btn.clear {
+    background-color: #d32f2f; /* Red for clear button */
+    color: #ffffff; /* White text */
+}
+
+/* Equals button styling */
+.btn.equals {
+    background-color: #388e3c; /* Green for equals button */
+    color: #ffffff; /* White text */
+}
+
+/* Hover and active states for buttons */
+.btn:hover {
+    background-color: #b2dfdb; /* Slightly darker on hover */
+}
+
+.btn:active {
+    background-color: #80cbc4; /* Even darker on active */
+}
+
+.btn.operator:hover {
+    background-color: #006064; /* Deep teal on hover */
+}
+
+.btn.clear:hover {
+    background-color: #c62828; /* Darker red on hover */
+}
+
+.btn.equals:hover {
+    background-color: #2e7d32; /* Darker green on hover */
+}
